@@ -27,9 +27,12 @@ strace ./hello
 0=stdin, 1=stdout, 2=stderr
 
 Omdirigering til fil:
-   >  opretter/overskriver fil (stdout)
-   2>  opretter/overskriver fil (stderr)
-   >> tilføjer/append (stdout)
+
+   `>`  opretter/overskriver fil (stdout)
+
+   `2>`  opretter/overskriver fil (stderr)
+
+   `>>` tilføjer/append (stdout)
 
 NOTE: strace skriver til stderr.
 
@@ -68,6 +71,7 @@ andre filter-programmer:
 - sort
 - uniq
 - tac
+- tr
 - sed
 
 Eller skriv dine egne i awk, perl eller andet.
